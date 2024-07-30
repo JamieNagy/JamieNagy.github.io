@@ -1,0 +1,213 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+h1,
+h2 {
+    color: #1f2221;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    border-bottom: 2px solid #116274;
+    padding-bottom: 10px;
+}
+
+p {
+    color: #343333;
+    margin-bottom: 20px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Bootstrap overrides for more control */
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-lg-6 {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* Card styling */
+.card {
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-body {
+    padding: 15px;
+}
+.mb-4 span {
+    color:#12859e;
+}
+
+/* Catalogue styles */
+.catalogue {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #f8f9fa;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.catalogue-title {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #dee2e6;
+    text-align: center;
+    font-weight: 600;
+    color: #b96329;
+}
+
+.nav-link {
+    padding: 10px 15px;
+    margin: 5px 0;
+    display: block;
+    color: #b96329c1;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: #e9ecef;
+    text-decoration: none;
+    color: #db5a0a;
+}
+
+.main-content {
+    margin-left: 250px;
+    margin-bottom: 0 !important;
+    /* same as catalogue width */
+}
+
+.container.mt-5 {
+    box-shadow: none !important;
+}
+
+/* Add a bottom border to card images */
+.card-img-top {
+    margin-bottom: 1rem;
+    border-bottom: 1.5px solid #cdc417;
+    /* Adjust color as needed */
+}
+
+.ge-des {
+    margin-bottom: 50px;
+}
+
+/* Add shadow to cards */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Adjust color and spread as needed */
+    transition: box-shadow 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Slightly larger shadow for hover effect */
+}
+
+@media (max-width: 992px) {
+    .catalogue {
+        width: 100%;
+        height: auto;
+        position: relative;
+        box-shadow: none;
+        padding: 15px;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+}
+
+/* Video Intro Link Styling */
+.video-intro-link {
+    display: inline-block;
+    /* Allows applying padding and margin */
+    background-color: #12859e;
+    /* Matching the color scheme */
+    color: #ffffff;
+    /* White text color for contrast */
+    padding: 10px 15px;
+    /* Adequate padding for clickability */
+    border-radius: 5px;
+    /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow for depth */
+    text-decoration: none;
+    /* Remove the default underline */
+    transition: background-color 0.3s, box-shadow 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+.video-intro-link:hover {
+    background-color: #0d7086;
+    /* Slightly darker shade on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Larger shadow for hover effect */
+    color: #ffc107;
+    /* Optional: Change text color on hover for more emphasis */
+}
+
+/* ... Your existing styles ... */
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    h1,
+    h2 {
+        font-size: 1.5em;
+    }
+}
+
+/* Additional styles for aesthetics */
+/* Feel free to add more styles as per your design preferences */

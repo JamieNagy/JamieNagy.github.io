@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Sharing Platform - Project Details</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="project1.css">
+</head>
+
+<body>
+    <script>
+        // Function to update which nav link is active based on scroll position
+        function updateNavLinks() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('#catalogue-sidebar .nav-link');
+            let currentActive = null;
+
+            // Remove active class from all nav links
+            navLinks.forEach(link => link.classList.remove('active'));
+
+            // Add active class to nav links based on the scroll position
+            for (let i = sections.length - 1; i >= 0; i--) {
+                if (window.scrollY >= sections[i].offsetTop - 200) { // 200px offset for activation before the section reaches the top of the viewport
+                    currentActive = sections[i].id;
+                    break;
+                }
+            }
+
+            // Set current active nav link
+            if (currentActive) {
+                const activeLink = document.querySelector('#catalogue-sidebar .nav-link[href="#' + currentActive + '"]');
+                if (activeLink) {
+                    activeLink.classList.add('active');
+                }
+            }
+        }
+
+        // Event listeners for scrolling and resizing
+        window.addEventListener('scroll', updateNavLinks);
+        window.addEventListener('resize', updateNavLinks);
+
+        // Initial call to set the active nav link
+        updateNavLinks();
+    </script>
+
+    <div id="catalogue-sidebar" class="catalogue">
+        <h3 class="catalogue-title">Catalogue</h3>
+        <nav class="nav flex-column">
+            <a class="nav-link" href="#homepage-layout">Homepage Layout</a>
+            <a class="nav-link" href="#authentication">Authentication</a>
+            <a class="nav-link" href="#user-page-layout">User Page Layout</a>
+            <a class="nav-link" href="#interactive-design">Interactive Design</a>
+            <a class="nav-link" href="#post-management">Posts Management</a>
+            <a class="nav-link" href="#profile-management">Profile Management</a>
+            <a class="nav-link" href="#search-functionality">Search Functionality</a>
+            <a class="nav-link" href="#security">Security Practices</a>
+        </nav>
+    </div>
+
+    <div class="container main-content">
+        <div class="container mt-5">
+            <h1 class="mb-4"><span>EchoReads</span> - Project Overview</h1>
+            <a class="mb-4 video-intro-link" href="https://youtu.be/bzMNTUBY1gc">For a video intro, click here</a>
+            <a class="mb-4 video-intro-link" href="https://echoreads.vercel.app/">To visit the site, click
+                here</a>
+            <section id="homepage-layout" class="mb-5">
+                <div class="container">
+                    <h2 class="mb-3">Homepage Layout</h2>
+                    <h4 class="ge-des">When you first go to this site, you will see a beautiful and well-structured
+                        homepage:</h4>
+                    <div class="row">
+                        <div class="col-lg-6 mb-3">
+                            <div class="card">
+                                <img src="./project1/p1-1.png" alt="Navbar header with logo and search bar"
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <p>A nav-bar header containing logo, navigate links, login/logout button and a
+                                        drop-down search
+                                        bar; A hero banner showing today's topic</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div class="card">
+                                <img src="./project1/p1-2.png" alt="Slider with posts" class="card-img-top">
+                                <div class="card-body">
+                                    <p>A slider containing 6 posts and their basic info. Will switch between current
+                                        active posts
+                                        and posts that are in the back. If user hovers on the post card, more detail
+                                        will be shown.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div class="card">
+                                <img src="./project1/p1-3.png" alt="List of posts with pagination" class="card-img-top">
+                                <div class="card-body">
+                                    <p>A list of paginated posts & Categories & Tags & Search bar</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div class="card">
+                                <img src="./project1/p1-4.png" alt="Latest article" class="card-img-top">
+                                <div class="card-body">
+                                    <p>Latest Article</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div class="card">
+                                <img src="./project1/p1-6.png" alt="Pagination and footer" class="card-img-top">
+                                <div class="card-body">
+                                    <p>Pagination and a beautiful footer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="authentication" class="mb-5">
+                <div class="container">
+                    <h2 class="mb-3">Authentication</h2>
+                    <h4 class="ge-des">Visitors need to be authenticated to do more things</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="./project1/p2-1.png" alt="Login interface with email and password fields"
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <p>If you click the login button located in the header, you will be redirected to
+                                        the
+                                        login page
+                                        (You need to register first if you haven't yet). You will need your email
+                                        address
+                                        and
+                                        password to log in. You can check "Remember Me" if you want this site to
+                                        remember
+                                        you.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="./project1/p2-2.png" alt="Google login page showing account selection"
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <p>If user clicks the login with Google button, the user will be redirected to
+                                        another
+                                        page
+                                        where Google will ask the user to choose a Google account to log in and user's
+                                        basic
+                                        info such as name and email
+                                        will be shared. User can directly login via Google.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="./project1/p2-3.png" alt="Registration form interface" class="card-img-top">
+                                <div class="card-body">
+                                    <p>The Register page requires users to put in their display name, email address, and
+                                        password.
+                                        The email address and password do have a format requirement and are dynamically
+                                        detected and
+                                        reminded. The user also need to let the site send their email a verification
+                                        code and put it in correctly. This page is protected by Google reCAPTCHA.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="./project1/p2-4.png" alt="Registration form interface" class="card-img-top">
+                                <div class="card-body">
+
+                                    <p>
+                                        The email address and password do have a format requirement and are dynamically
+                                        detected and
+                                        reminded.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="./project1/p2-6.png" alt="Registration form interface" class="card-img-top">
+                                <div class="card-body">
+
+                                    <p>
+                                        When user click send button, a email containing verification code will be sent
+                                        to the user via SMTP. The user must put in the correct code to proceed to
+                                        register.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="./project1/p2-7.png" alt="Registration form interface" class="card-img-top">
+                                <div class="card-body">
+
+                                    <p>
+                                        If the code is not correct, the user will not be able to register.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="./project1/p2-5.png" alt="Header display after successful login"
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <p>If logged in successfully, you will notice changes in the header.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="user-page-layout" class="mb-5">
+                <div class="container">
+                    <h2 class="mb-3">User Page Layout</h2>
+                    <h4 class="ge-des">Authenticated user can click "My Space" tab to go to their user page</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="./project1/p3-1.png" alt="p3-1" class="card-img-top">
+                                <div class="card-body">
+                                    <p>Sort option & User's own post list & their profile card</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="./project1/p3-2.png" alt="p3-2" class="card-img-top">
+                                <div class="card-body">
+                                    <p>There is also a Explore section on the side recommending posts</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="./project1/p3-3.png" alt="p3-3" class="card-img-top">
+                                <div class="card-body">
+                                    <p>User's post list is also paginated</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="interactive-design" class="mb-5">
+                <div class="container">
+                    <h2 class="mb-3">Interactive Design and Funtionalities</h2>
+                    <h4 class="ge-des">There are lots of convienient buttons and links in this site for user experience
+                    </h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="./project1/p4-1.png" alt="p4-1" class="card-img-top">
+                                <div class="card-body">
+                                    <p>Instead of waiting the slidebar to switch posts on its own, user can click the
+                                        arrow
+                                        button to instantly switch</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="./project1/p4-2.png" alt="p4-2" class="card-img-top">
+                                <div class="card-body">
+                                    <p>User can filter the posts list based on category and tag. To do so, just click
+                                        the
+                                        desired category or/and tag</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="./project1/p4-3.png" alt="p4-3" class="card-img-top">
+                                <div class="card-body">
+                                    <p>Once clicked, the website will automatically get filtered posts based on the
+                                        criteria. Allow multiple filters. User can also click the refresh icon to change
+                                        another group of categories/tags</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="./project1/p4-4.png" alt="p4-4" class="card-img-top">
+                                <div class="card-body">
+                                    <p>In the user's page, user can sort their posts in 4 different ways as shown here
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="./project1/p4-5.png" alt="p4-5" class="card-img-top">
+                                <div class="card-body">
+                                    <p>At the right-bottom side of the screen, there is always a scroll to top button
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="./project1/p4-6.png" alt="p4-6" class="card-img-top">
+                                <div class="card-body">
+                                    <p>In many pages, there is a "Go-Back" icon which directs user to the last visit
+                                        page
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="./project1/p4-7.png" alt="p4-6" class="card-img-top">
+                                <div class="card-body">
+                                    <p>There is a "Subscribe" button in the footer. If the user fills in their email and
+                                        clicks the button , then a welcome email will be sent and the user will be added
+                                        to the subscribed list!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="post-management" class="mb-5">
+                <div class="container">
+                    <h2 class="mb-3">Posts Management</h2>
+                    <h4 class="ge-des">Each user can create, edit, and delete their posts. Visitors can also view any
+                        post
+                        they want to,
+                        but only authenticated user can endorse or dis-endorse posts</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="./project1/p5-1.png" alt="p5-1" class="card-img-top">
+                                <div class="card-body">
+                                    <p>In the middle of the header, click the + button. User will be direct to the post
+                                        creation page(need to log in first)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="./project1/p5-2.png" alt="p5-2" class="card-img-top">
+                                <div class="card-body">
+                                    <p>In the create post page, user need to put in post's title and content(since this
+                                        site
+                                        is mainly about articles, post content has a minimum requirement of 300
+                                        characters).
+                                        User can choose to upload an image for the post if they wish, but they must
+                                        select a
+                                        category and at least 1 tag for the post. Once finished, click "Create Post".
+                                        The
+                                        created post will immediately be submitted to the database and user can view it
+                                        in
+                                        the "My Posts" section in "My
+                                        Space". People now are able to search for and view this post too</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="./project1/p5-3.png" alt="p5-3" class="card-img-top">
+                                <div class="card-body">
+                                    <p>There are many ways to view a post. For example, click on this post will direct
+                                        user
+                                        to a article page like this. It will display the image, author's info, last edit
+                                        date, category, tags and the text content</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="./project1/p5-4.png" alt="p5-4" class="card-img-top">
+                                <div class="card-body">
+                                    <p>The article page will look like this</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="./project1/p5-5.png" alt="p5-5" class="card-img-top">
+                                <div class="card-body">
+                                    <p>Authenticated user can click the heart icon to endorse this post, to dis-endorse,
+                                        click the broken heart. Each user is only allowed to endorse each post once. The
+                                        total amount of the endorsement will be calculated by server</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="./project1/p5-6.png" alt="p5-6" class="card-img-top">
+                                <div class="card-body">
+                                    <p>User can click the edit button to edit their posts. To delete, click the delete
+                                        button and click on "confirm".</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="./project1/p5-7.png" alt="p5-7" class="card-img-top">
+                                <div class="card-body">
+                                    <p>In the edit page, the form will be auto-populated by the original post's data.
+                                        User
+                                        can easily make any modification.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="./project1/p5-8.png" alt="p5-8" class="card-img-top">
+                                <div class="card-body">
+                                    <p>Authenticated users can also make comment to any post!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="profile-management" class="mb-5">
+                <div class="container">
+                    <h2 class="mb-3">User Profile Management</h2>
+                    <h4 class="ge-des">Users' info will be stored in the database. There are many ways to interact with
+                        them
+                    </h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="./project1/p6-1.png" alt="p6-1" class="card-img-top">
+                                <div class="card-body">
+                                    <p>The user's name will display in the header if logged in</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="./project1/p6-2.png" alt="p6-2" class="card-img-top">
+                                <div class="card-body">
+                                    <p>In the user page, on the right there is a user profile card, which display the
+                                        name
+                                        and bio of the user. Click "Profile" to go to the profile page</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="./project1/p6-3.png" alt="p6-3" class="card-img-top">
+                                <div class="card-body">
+                                    <p>User can click on the small pencil icon to upload and change a new avatar. Click
+                                        on
+                                        "Edit Profile" will let user modify their name and bio. The "Change Password"
+                                        will
+                                        allow user to set a new password. For users who logged in via google thus
+                                        haven't
+                                        set a password, it will pop up a window let them set a password. The
+                                        "Change Password" will be replaced by "Set Password"</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="search-functionality" class="mb-5">
+                <div class="container">
+                    <h2 class="mb-3">Search Functionality</h2>
+                    <h4 class="ge-des">Visitors can search posts in the search bar
+                    </h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="./project1/p7-1.png" alt="p7-1" class="card-img-top">
+                                <div class="card-body">
+                                    <p>One search bar is opened by clicking the search icon in the header. It will drop
+                                        a
+                                        search bar</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="./project1/p7-2.png" alt="p7-2" class="card-img-top">
+                                <div class="card-body">
+                                    <p>One search bar is located at the homepage</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="./project1/p7-3.png" alt="p7-3" class="card-img-top">
+                                <div class="card-body">
+                                    <p>After clicking "Enter", user will be directed to the search result page. A list
+                                        of
+                                        paginated posts will be shown. Click any of
+                                        them to view the full post</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="security" class="mb-5">
+                <div class="container">
+                    <h2 class="mb-3">Security Practices</h2>
+                    <h4 class="ge-des">There are various implementation of security practices
+                    </h4>
+                    <ul>
+                        <li>Every user's password is hashed and salted in the database</li>
+                        <li>There are always validation process in the backend to prevent malicious SQL injection and
+                            unauthorized user activities</li>
+                        <li>All information is stored in the server side, meaning unauthorized changes in the frontend
+                            will
+                            not affect anything</li>
+                    </ul>
+                </div>
+            </section>
+
+
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom Scripts -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>
