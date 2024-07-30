@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Header from "./components/Header";
-import Intro from "./components/Intro";
+// import Intro from "./components/Intro";
 import Portfolio from "./components/Portfolio";
 import Skills from "./components/Skills";
 import Services from "./components/Services";
@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import { motion, useAnimation, useScroll, useTransform } from "framer-motion";
 import "./App.css";
 import "./intro.css";
+import Tabs from "./components/Introduction/Tabs";
 
 const App = () => {
   const controls = useAnimation();
@@ -160,7 +161,8 @@ const App = () => {
         animate={controls}
         transition={{ duration: 1, ease: "easeOut" }}
       >
-        <Intro />
+        <Tabs />
+        {/* <Intro /> */}
         <hr />
         <Portfolio />
         <hr />

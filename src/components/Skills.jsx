@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
@@ -17,7 +18,11 @@ const Skills = () => {
         <div className="skills-category">
           <h3 className="category-title">Frontend Development</h3>
           <div className="row">
-            <div className="col-md-6 col-lg-3 mb-5">
+            <motion.div
+              className="col-md-6 col-lg-3 mb-5"
+              whileHover={{ scale: 1.08 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
               <div className="skill-block">
                 <i className="fab fa-react skill-icon"></i>
                 <h4 className="skill-title">React</h4>
@@ -33,8 +38,12 @@ const Skills = () => {
                   for creating fluid animations and interactive UI components.
                 </p>
               </div>
-            </div>
-            <div className="col-md-6 col-lg-3 mb-5">
+            </motion.div>
+            <motion.div
+              className="col-md-6 col-lg-3 mb-5"
+              whileHover={{ scale: 1.08 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
               <div className="skill-block">
                 <div className="skill-icons">
                   <i className="fab fa-html5 skill-icon"></i>
@@ -51,8 +60,12 @@ const Skills = () => {
                   performance, and cross-browser compatibility.
                 </p>
               </div>
-            </div>
-            <div className="col-md-6 col-lg-3 mb-5">
+            </motion.div>
+            <motion.div
+              className="col-md-6 col-lg-3 mb-5"
+              whileHover={{ scale: 1.08 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
               <div className="skill-block">
                 <i className="fab fa-bootstrap skill-icon"></i>
                 <h4 className="skill-title">Bootstrap</h4>
@@ -65,8 +78,12 @@ const Skills = () => {
                   identity.
                 </p>
               </div>
-            </div>
-            <div className="col-md-6 col-lg-3 mb-5">
+            </motion.div>
+            <motion.div
+              className="col-md-6 col-lg-3 mb-5"
+              whileHover={{ scale: 1.08 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
               <div className="skill-block">
                 <div className="skill-icon" id="django-icon-div">
                   <img
@@ -85,8 +102,12 @@ const Skills = () => {
                   streamlined workflows.
                 </p>
               </div>
-            </div>
-            <div className="col-md-6 col-lg-3 mb-5">
+            </motion.div>
+            <motion.div
+              className="col-md-6 col-lg-3 mb-5"
+              whileHover={{ scale: 1.08 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
               <div className="skill-block">
                 <div className="skill-icon" id="django-icon-div">
                   <img
@@ -105,8 +126,12 @@ const Skills = () => {
                   seamless client-server transitions.
                 </p>
               </div>
-            </div>
-            <div className="col-md-6 col-lg-3 mb-5">
+            </motion.div>
+            <motion.div
+              className="col-md-6 col-lg-3 mb-5"
+              whileHover={{ scale: 1.08 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
               <div className="skill-block">
                 <div className="skill-icon" id="django-icon-div">
                   <img
@@ -124,8 +149,12 @@ const Skills = () => {
                   pipelines, ensuring rapid and robust testing workflows.
                 </p>
               </div>
-            </div>
-            <div className="col-md-6 col-lg-3 mb-5">
+            </motion.div>
+            <motion.div
+              className="col-md-6 col-lg-3 mb-5"
+              whileHover={{ scale: 1.08 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
               <div className="skill-block">
                 <div className="skill-icon" id="django-icon-div">
                   <img
@@ -148,8 +177,12 @@ const Skills = () => {
                   UX.
                 </p>
               </div>
-            </div>
-            <div className="col-md-6 col-lg-3 mb-5">
+            </motion.div>
+            <motion.div
+              className="col-md-6 col-lg-3 mb-5"
+              whileHover={{ scale: 1.08 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
               <div className="skill-block">
                 <div className="skill-icon" id="django-icon-div">
                   <img
@@ -169,13 +202,17 @@ const Skills = () => {
                   rankings.
                 </p>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
         <div className="skills-category">
           <h3 className="category-title">Backend Development</h3>
           <div className="row">
-            <div className="col-md-6 col-lg-3 mb-5">
+            <motion.div
+              className="col-md-6 col-lg-3 mb-5"
+              whileHover={{ scale: 1.08 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
               <div className="skill-block">
                 <i className="fab fa-node skill-icon"></i>
                 <h4 className="skill-title">Node.js & Express.js</h4>
@@ -192,8 +229,12 @@ const Skills = () => {
                   integrating databases and authentication systems.
                 </p>
               </div>
-            </div>
-            <div className="col-md-6 col-lg-3 mb-5">
+            </motion.div>
+            <motion.div
+              className="col-md-6 col-lg-3 mb-5"
+              whileHover={{ scale: 1.08 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
               <div className="skill-block">
                 <div className="skill-icon" id="django-icon-div">
                   <img
@@ -213,8 +254,12 @@ const Skills = () => {
                   CI/CD pipelines.
                 </p>
               </div>
-            </div>
-            <div className="col-md-6 col-lg-3 mb-5">
+            </motion.div>
+            <motion.div
+              className="col-md-6 col-lg-3 mb-5"
+              whileHover={{ scale: 1.08 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
               <div className="skill-block">
                 <div className="skill-icon" id="flask-icon-div">
                   <img
@@ -234,8 +279,12 @@ const Skills = () => {
                   CI/CD deployments.
                 </p>
               </div>
-            </div>
-            <div className="col-md-6 col-lg-3 mb-5">
+            </motion.div>
+            <motion.div
+              className="col-md-6 col-lg-3 mb-5"
+              whileHover={{ scale: 1.08 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
               <div className="skill-block">
                 <div className="skill-icon" id="postgresql-icon-div">
                   <img
@@ -258,8 +307,12 @@ const Skills = () => {
                   transactions and complex query operations.
                 </p>
               </div>
-            </div>
-            <div className="col-md-6 col-lg-3 mb-5">
+            </motion.div>
+            <motion.div
+              className="col-md-6 col-lg-3 mb-5"
+              whileHover={{ scale: 1.08 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
               <div className="skill-block">
                 <div className="skill-icon" id="mongodb-icon-div">
                   <img
@@ -279,8 +332,12 @@ const Skills = () => {
                   and reliability.
                 </p>
               </div>
-            </div>
-            <div className="col-md-6 col-lg-3 mb-5">
+            </motion.div>
+            <motion.div
+              className="col-md-6 col-lg-3 mb-5"
+              whileHover={{ scale: 1.08 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
               <div className="skill-block">
                 <i className="fas fa-cogs skill-icon"></i>
                 <h4 className="skill-title">Microservices Architecture</h4>
@@ -296,8 +353,12 @@ const Skills = () => {
                   consistent deployment and scalability.
                 </p>
               </div>
-            </div>
-            <div className="col-md-6 col-lg-3 mb-5">
+            </motion.div>
+            <motion.div
+              className="col-md-6 col-lg-3 mb-5"
+              whileHover={{ scale: 1.08 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
               <div className="skill-block">
                 <i className="fas fa-cloud skill-icon"></i>
                 <h4 className="skill-title">Cloud Services</h4>
@@ -314,13 +375,17 @@ const Skills = () => {
                   and services.
                 </p>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
         <div className="skills-category">
           <h3 className="category-title">General</h3>
           <div className="row">
-            <div className="col-md-6 col-lg-3 mb-5">
+            <motion.div
+              className="col-md-6 col-lg-3 mb-5"
+              whileHover={{ scale: 1.08 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
               <div className="skill-block">
                 <div className="skill-icon" id="django-icon-div">
                   <img
@@ -341,8 +406,12 @@ const Skills = () => {
                   deployment.
                 </p>
               </div>
-            </div>
-            <div className="col-md-6 col-lg-3 mb-5">
+            </motion.div>
+            <motion.div
+              className="col-md-6 col-lg-3 mb-5"
+              whileHover={{ scale: 1.08 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
               <div className="skill-block">
                 <div className="skill-icons">
                   <i className="fab fa-git-alt skill-icon"></i>
@@ -363,13 +432,17 @@ const Skills = () => {
                   deployment processes for efficient software delivery.
                 </p>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
         <div className="skills-category">
           <h3 className="category-title">Machine Learning & AI</h3>
           <div className="row">
-            <div className="col-md-6 col-lg-3 mb-5">
+            <motion.div
+              className="col-md-6 col-lg-3 mb-5"
+              whileHover={{ scale: 1.08 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
               <div className="skill-block">
                 <div className="skill-icon" id="django-icon-div">
                   <img
@@ -394,8 +467,12 @@ const Skills = () => {
                   real-world problems across various domains.
                 </p>
               </div>
-            </div>
-            <div className="col-md-6 col-lg-3 mb-5">
+            </motion.div>
+            <motion.div
+              className="col-md-6 col-lg-3 mb-5"
+              whileHover={{ scale: 1.08 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
               <div className="skill-block">
                 <i className="fas fa-chart-area skill-icon"></i>
                 <h4 className="skill-title">Plotly, Matplotlib & Seaborn</h4>
@@ -408,8 +485,12 @@ const Skills = () => {
                   scientific and business data.
                 </p>
               </div>
-            </div>
-            <div className="col-md-6 col-lg-3 mb-5">
+            </motion.div>
+            <motion.div
+              className="col-md-6 col-lg-3 mb-5"
+              whileHover={{ scale: 1.08 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
               <div className="skill-block">
                 <div className="skill-icon" id="django-icon-div">
                   <img
@@ -428,8 +509,12 @@ const Skills = () => {
                   datasets.
                 </p>
               </div>
-            </div>
-            <div className="col-md-6 col-lg-3 mb-5">
+            </motion.div>
+            <motion.div
+              className="col-md-6 col-lg-3 mb-5"
+              whileHover={{ scale: 1.08 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
               <div className="skill-block">
                 <div className="skill-icon" id="flask-icon-div">
                   <img
@@ -447,8 +532,12 @@ const Skills = () => {
                   environments for scalable AI solutions.
                 </p>
               </div>
-            </div>
-            <div className="col-md-6 col-lg-3 mb-5">
+            </motion.div>
+            <motion.div
+              className="col-md-6 col-lg-3 mb-5"
+              whileHover={{ scale: 1.08 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
               <div className="skill-block">
                 <div className="skill-icon" id="flask-icon-div">
                   <img
@@ -466,8 +555,12 @@ const Skills = () => {
                   for chatbots, translation, summarization, and more.
                 </p>
               </div>
-            </div>
-            <div className="col-md-6 col-lg-3 mb-5">
+            </motion.div>
+            <motion.div
+              className="col-md-6 col-lg-3 mb-5"
+              whileHover={{ scale: 1.08 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
               <div className="skill-block">
                 <div className="skill-icon" id="django-icon-div">
                   <img
@@ -485,8 +578,12 @@ const Skills = () => {
                   LoRA, and distributed training to scale solutions effectively.
                 </p>
               </div>
-            </div>
-            <div className="col-md-6 col-lg-3 mb-5">
+            </motion.div>
+            <motion.div
+              className="col-md-6 col-lg-3 mb-5"
+              whileHover={{ scale: 1.08 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
               <div className="skill-block">
                 <div className="skill-icon" id="django-icon-div">
                   <img
@@ -506,7 +603,7 @@ const Skills = () => {
                   collection.
                 </p>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

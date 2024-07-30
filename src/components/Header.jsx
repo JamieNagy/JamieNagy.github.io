@@ -29,7 +29,7 @@ const Header = ({
           >
             <span className="oi oi-menu"></span> Menu
           </button>
-          <div className="collapse navbar-collapse" id="ftco-nav">
+          <div className="collapsey navbar-collapse" id="ftco-nav">
             <ul className="navbar-nav nav ml-auto">
               {[
                 "header",

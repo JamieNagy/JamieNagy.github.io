@@ -38,13 +38,11 @@ const Portfolio = () => {
             <motion.div
               key={index}
               className="item features-image col-12 col-md-6 col-lg-4"
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.92 }}
+              whileHover={{ scale: 1.08 }}
               transition={{
                 type: "spring",
-                stiffness: 300,
-                damping: 20,
-                bounce: 0.25,
+                stiffness: 400,
+                damping: 10,
               }}
             >
               <div className="item-wrapper">
@@ -68,11 +66,7 @@ const Portfolio = () => {
                         key={linkIndex}
                         className="mbr-link mbr-fonts-style display-7"
                       >
-                        <strong>
-                          <a href={link.href} className="portfolio-link">
-                            {link.text}
-                          </a>
-                        </strong>
+                        <strong>{link.text}</strong>
                       </span>
                     ))}
                   </div>
