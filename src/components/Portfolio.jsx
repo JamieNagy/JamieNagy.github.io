@@ -105,7 +105,7 @@ const portfolioItems = [
     description: `An AI-driven chatbot to assist with medical queries. Utilized transformers and trl for fine-tuning a LLaMA model, enhanced with 4-bit quantization via BitsAndBytes for efficiency.`,
     links: [
       {
-        href: "https://github.com/JamieDeveloper/md-chatbot-flask",
+        href: "https://github.com/JamieNagy/md-chatbot-flask",
         text: "Github Repo",
       },
     ],
@@ -143,7 +143,7 @@ const portfolioItems = [
     description: `This is A full stack Next.js app for sharing meals. Built with app router. Below you can find a github repo for a demo.`,
     links: [
       {
-        href: "https://github.com/JamieDeveloper/foodies.git",
+        href: "https://github.com/JamieNagy/foodies.git",
         text: "Github Repo for Demo",
       },
     ],
@@ -155,7 +155,7 @@ const portfolioItems = [
     description: `A Gomoku game with my own AI built with tkinter. Can you beat the hard level?`,
     links: [
       {
-        href: "https://github.com/JamieDeveloper/Jamie-Gomoku",
+        href: "https://github.com/JamieNagy/Jamie-Gomoku",
         text: "Github Repo",
       },
     ],

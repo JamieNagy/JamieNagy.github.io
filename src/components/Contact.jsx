@@ -45,15 +45,12 @@ const Contact = () => {
               </div>
             </div>
             <div className="social-icons">
-              <a
-                className="social-icon"
-                href="https://github.com/JamieDeveloper"
-              >
+              <a className="social-icon" href="https://github.com/JamieNagy">
                 <i className="fab fa-github"></i>
               </a>
               <a
                 className="social-icon"
-                href="https://www.linkedin.com/in/jamie-nagy-48967a2b1/"
+                href="https://www.linkedin.com/in/jamie-n-48967a2b1/"
               >
                 <i className="fab fa-linkedin-in"></i>
               </a>
