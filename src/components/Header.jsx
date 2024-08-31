@@ -84,7 +84,7 @@ const Header = ({
           <div className="divider-custom-line"></div>
         </div>
         <p className="masthead-subheading font-weight-light mb-0">
-          Full Stack Web Developer <br /> Machine Learning & AI Engineer
+          Data Scientist <br /> Full Stack Web Developer
         </p>
       </motion.div>
     </header>
