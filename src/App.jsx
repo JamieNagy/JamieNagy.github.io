@@ -161,7 +161,7 @@ const App = () => {
         animate={controls}
         transition={{ duration: 1, ease: "easeOut" }}
       >
-        <Tabs />
+        {/* <Tabs /> */}
         {/* <Intro /> */}
         <hr />
         <Portfolio />

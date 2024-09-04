@@ -33,7 +33,6 @@ const Header = ({
             <ul className="navbar-nav nav ml-auto">
               {[
                 "header",
-                "intro",
                 "portfolio",
                 "my-skills",
                 "services",
@@ -84,7 +83,7 @@ const Header = ({
           <div className="divider-custom-line"></div>
         </div>
         <p className="masthead-subheading font-weight-light mb-0">
-          Data Scientist <br /> Full Stack Web Developer
+          Data Scientist <br /> Web Developer
         </p>
       </motion.div>
     </header>

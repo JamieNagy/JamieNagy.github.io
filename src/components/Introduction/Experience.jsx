@@ -46,9 +46,6 @@ const Experience = () => {
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-700 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Experience
           </h1>
-          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            A blog created with Next.js and Tailwind.css
-          </p>
         </div>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {experiences.map((exp, index) => (
@@ -87,7 +84,7 @@ const Experience = () => {
                           ))}
                         </div>
                       </div>
-                      <ul className="list-disc list-inside prose max-w-none text-gray-700 dark:text-gray-400">
+                      <ul className="list-disc list-inside prose max-w-none text-gray-700 dark:text-gray-500">
                         {exp.highlights.map((highlight, idx) => (
                           <li key={idx}>{highlight}</li>
                         ))}

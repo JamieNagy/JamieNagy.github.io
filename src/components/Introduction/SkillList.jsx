@@ -122,9 +122,9 @@ const SkillList = () => {
                       {skillCategory.category}
                     </dd>
                   </dl>
-                  <div className="space-y-5 xl:col-span-3">
+                  <div className="space-y-5 xl:col-span-3 ml-6">
                     <div className="space-y-6">
-                      <ul className="list-disc list-inside prose max-w-none text-gray-700 dark:text-gray-400">
+                      <ul className="list-disc list-inside prose max-w-none text-gray-700 dark:text-gray-500">
                         {skillCategory.skills.map((skill, idx) => (
                           <li key={idx}>{skill}</li>
                         ))}
