@@ -2,34 +2,20 @@ import React from "react";
 
 const education = [
   {
-    duration: "September 2015 - June 2019",
-    degree: "Bachelor of Science in Computer Science",
-    institution: "University A",
+    duration: "May 2024 - May 2026 (Expected)",
+    degree: "Bachelor in Computer Science",
+    institution: "CUNY Queens College",
     highlights: [
-      "Graduated with honors.",
+      "Conduct Data Science projects weekly",
       "Relevant coursework: Data Structures, Algorithms, Databases, Machine Learning.",
-      "Member of the Computer Science Club.",
+      "Dean's list",
     ],
   },
   {
-    duration: "September 2019 - June 2021",
-    degree: "Master of Science in Software Engineering",
-    institution: "University B",
-    highlights: [
-      'Thesis on "Optimizing Performance in Distributed Systems".',
-      "Completed advanced coursework in software architecture and design.",
-      "Graduate assistant in the Department of Computer Science.",
-    ],
-  },
-  {
-    duration: "September 2021 - June 2022",
-    degree: "Certificate in Data Science",
-    institution: "Online University",
-    highlights: [
-      "Focused on data analysis, machine learning, and data visualization.",
-      "Completed projects involving real-world data sets.",
-      "Learned tools like TensorFlow, scikit-learn, and Pandas.",
-    ],
+    duration: "Jan 2022 - May 2024",
+    degree: "Associate in Computer Science and Information Security",
+    institution: "CUNY Queensborough Community College",
+    highlights: ["Participated in the coding club", "Dean's list"],
   },
 ];
 

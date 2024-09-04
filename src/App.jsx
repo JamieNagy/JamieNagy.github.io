@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import Header from "./components/Header";
 // import Intro from "./components/Intro";
-import Portfolio from "./components/Portfolio";
-import Skills from "./components/Skills";
+import Portfolio from "./components/Portfolio/Portfolio";
+import Skills from "./components/skills/Skills";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
 import { motion, useAnimation, useScroll, useTransform } from "framer-motion";

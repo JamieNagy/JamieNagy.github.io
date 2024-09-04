@@ -40,18 +40,7 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div className="col-md-4 mb-5">
-            <div className="service-item mx-auto">
-              <div className="service-icon">
-                <i className="fas fa-cloud"></i>
-              </div>
-              <h4 className="service-title">Utilize Cloud Services</h4>
-              <p className="service-description">
-                Assist with cloud services like AWS, GCP, Azure to efficiently
-                host, maintain businesses' web apps, and minimize costs.
-              </p>
-            </div>
-          </div>
+
           <div className="col-md-4 mb-5">
             <div className="service-item mx-auto">
               <div className="service-icon">
@@ -61,18 +50,6 @@ const Services = () => {
               <p className="service-description">
                 Provide advanced data analysis through machine learning
                 algorithms.
-              </p>
-            </div>
-          </div>
-          <div className="col-md-4 mb-5">
-            <div className="service-item mx-auto">
-              <div className="service-icon">
-                <i className="fa-brands fa-medapps"></i>
-              </div>
-              <h4 className="service-title">Misc</h4>
-              <p className="service-description">
-                Help with bug resolution and algorithms design. Contact me for
-                more details.
               </p>
             </div>
           </div>
