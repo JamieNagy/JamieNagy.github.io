@@ -109,7 +109,7 @@ const Portfolio = () => {
                 <motion.div
                   key={index}
                   className="item features-image col-12 col-md-6 col-lg-4"
-                  whileHover={{ scale: 1.08 }}
+                  whileHover={{ scale: 1.05 }}
                   transition={{
                     type: "spring",
                     stiffness: 400,
