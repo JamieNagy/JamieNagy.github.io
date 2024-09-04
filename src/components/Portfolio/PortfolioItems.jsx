@@ -15,7 +15,7 @@ const PortfolioItems = [
   {
     image: "assets/AstroAnalytic.png",
     alt: "AstroInsight",
-    title: "AstroInsight",
+    title: "Space Flight Mission Prediction",
     description: `This data science project leverages time series analysis, machine learning, and geospatial visualization to provide predictive insights into space flight dynamics since 1957. It employs advanced analytics to forecast launch trends, assess mission outcomes, and optimize operational strategies.`,
     links: [{ href: "https://astro-insight.vercel.app/", text: "Visit Site" }],
     affinity: "Data Scientist",
